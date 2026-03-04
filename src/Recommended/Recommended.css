@@ -1,0 +1,26 @@
+.recommended {
+  margin-left: 220px;
+}
+.recommended-flex {
+  display: flex;
+  margin-left: 220px;
+}
+.recommended-title {
+  font-size: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 220px;
+  color: yellowgreen;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.btns {
+  padding: 10px 20px;
+  margin-right: 6px;
+  background: transparent;
+  border: none;
+  border: 0.6px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}

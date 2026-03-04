@@ -1,7 +1,7 @@
 import React from "react";
 import "./Colors.css";
 const Colors = () => {
-  return <div></div>;
+  return <h3>Colors</h3>;
 };
 
 export default Colors;

@@ -2,7 +2,7 @@ import React from "react";
 import "./Price.css";
 
 const Price = () => {
-  return <div></div>;
+  return <h3>Price </h3>;
 };
 
 export default Price;
