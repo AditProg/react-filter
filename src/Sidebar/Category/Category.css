@@ -1,57 +1,43 @@
-.sidebar-title {
-  font-size: 22px;
-  font-weight: normal;
-  margin-bottom: 20px;
-}
-.sidebar-items {
-  margin-top: 20px;
-}
 .sidebar-label-container {
-  display: block;
+  display: flex; /* flex row: circle + text */
+  align-items: center; /* vertically aligned */
+  gap: 8px; /* space between circle and text */
+  cursor: pointer;
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 15px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
+
 .sidebar-label-container input {
-  position: absolute;
+  position: absolute; /* hide native radio */
   opacity: 0;
-  cursor: pointer;
 }
 
 .checkmark {
-  position: absolute;
+  width: 24px; /* slightly bigger for clarity */
+  height: 24px;
+  border-radius: 50%; /* round button */
+  border: 2px solid #ccc;
+  position: relative;
+  display: inline-block;
+}
 
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: whitesmoke;
-  border-radius: 4px;
-}
-.sidebar-label-container:hover input ~ .checkmark {
-  background-color: gold;
-}
-.sidebar-label-container input:checked ~ .checkmark {
-  background-color: blueviolet;
-}
-.checkmark:after {
+/* Tick inside circle */
+.checkmark::after {
   content: "";
   position: absolute;
-  display: none;
-}
-.sidebar-label-container input:checked ~ .checkmark:after {
-  display: block;
-}
-.sidebar-label-container .checkmark:after {
-  left: 7px;
-  top: 3px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
+  left: 6px;
+  top: 4px;
+  width: 6px;
+  height: 12px;
+  border: solid #ffd700; /* bright gold tick */
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
+  display: none;
+}
+
+.sidebar-label-container input:checked + .checkmark::after {
+  display: block;
+}
+
+.label-text {
+  user-select: none; /* prevent accidental text selection */
 }

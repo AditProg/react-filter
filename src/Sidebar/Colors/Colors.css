@@ -1,0 +1,9 @@
+.color-title {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.all {
+  background: linear-gradient(blueviolet, gold);
+}
