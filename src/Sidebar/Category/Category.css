@@ -5,6 +5,9 @@
   cursor: pointer;
   position: relative;
 }
+.sidebar-title {
+  text-decoration: underline;
+}
 
 .sidebar-label-container input {
   position: absolute; /* hide native radio */
